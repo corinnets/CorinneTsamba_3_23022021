@@ -8,7 +8,7 @@
 
 //2. Base styles
 @import'Base/base';
-@import'Base/rest';
+@import'Base/reset';
 
 
 //3. Components
@@ -25,3 +25,5 @@
 //5. Pages
 @import'Pages/home';
 @import'Pages/restaurant';
+
+p{ font-size: 10px;}
