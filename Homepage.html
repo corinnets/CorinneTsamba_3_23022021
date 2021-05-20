@@ -22,52 +22,50 @@
                 Réservez le menu qui vous convient
             </h1>
             <p class="topbar_detail_text">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-            <button type="button" class="btn">Explorer nos restaurants</button>
+            <div class="btn">Explorer nos restaurants</button>
         </div>
-        
     </header>
-    <nav class="nav_order">
-        <h2>Fonctionnement</h2>
-        <ol>
-            <li class="nav_order_list">
-            <i class="fas fa-mobile-alt"></i>
-            <span>Choisissez un restaurant</span>
+    <nav class="nav">
+        <h2 class="nav__heading">Fonctionnement</h2>
+        <ul class="nav__list">
+            <li class="nav__list__item ">
+                <span class="nav__list__item__numb one">1</span><i class="fas fa-mobile-alt nav__list__item__icon"></i><span class="nav__list__item__text">Choisissez un restaurant</span>
             </li>
-            <li class="nav_order_list">
-                <i class="fas fa-list-ul"></i>
-                <span>Composez votre menu</span>
+            <li class="nav__list__item ">
+                <span class="nav__list__item__numb two">2</span><i class="fas fa-list-ul nav__list__item__icon"></i><span class="nav__list__item__text">Composez votre menu</span>
             </li>
-            <li class="nav_order_list">
-                <i class="fas fa-store"></i>
-                <span>Déguster au restaurant</span>
+            <li class="nav__list__item nav__list__item--active ">
+                <span class="nav__list__item__numb three">3</span><i class="fas fa-store nav__list__item__icon nav__list__item__icon--active"></i><span class="nav__list__item__text">Déguster au restaurant</span>
             </li>
-        </ol>
+        </ul>
     </nav>
-    <section class="list_restau">
-        <h2>Restaurants</h2>
-        <picture class="restau_card">
+    <section class="restau">
+        <h2 class="restau__heading">Restaurants</h2>
+        <picture class="restau__card">
+            <span class="restau_card__info__tag">Nouveau</span>
             <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restau la pallette du goût">
-            <div class="restau_heading">La palette du goût</div>
-            <div class="restau_location">Ménilmontant</div>
-            <div class="restau_tag">Nouveau</div>
-            <div class="restau_rate"><i class="far fa-heart"></i></div>
+            <div class="restau__card__name">La palette du goût</div>
+            <div class="restau_card__info">
+                <div class="restau_card__info__location">Ménilmontant</div>
+                <div class="restau_card__info__rate"><i class="far fa-heart"></i></div>
+            </div>
         </picture>
         <picture class="restau_card">
             <img src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="restau la note enchantée">
-            <div class="restau_heading">La note enchantée</div>
+            <div class="restau__card__name">La note enchantée</div>
             <div class="restau_location">Charonne</div>
             <div class="restau_tag">Nouveau</div>
             <div class="restau_rate"><i class="far fa-heart heart--pink"></i></div>
         </picture>
         <picture class="restau_card">
             <img src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restau A la française">
-            <div class="restau_heading">A la française</div>
+            <div class="restau__card__name">A la française</div>
             <div class="restau_location">Cité Rouge</div>
             <div class="restau_rate"><i class="far fa-heart"></i></div>
         </picture>
         <picture class="restau_card">
             <img src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="restau Le délice des sens">
-            <div class="restau_heading">Le délice des sens</div>
+            <div class="restau__card__name">Le délice des sens</div>
             <div class="restau_location">Folie-Méricourt</div>
             <div class="restau_rate"><i class="far fa-heart"></i></div>
         </picture>

@@ -7,3 +7,86 @@
     background-color:$white2 ;
     
 }
+
+@mixin background-grey-dark {
+    background-color:$grey-dark ;
+}
+
+@mixin background-primary-light {
+    background-color: $primary-light;
+
+}
+
+//icon store colored
+
+@mixin icon-active {
+        color: $primary-dark;
+    }
+    
+
+
+
+
+//styles bordure circulaire
+
+@mixin circle {
+    border-radius: 50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius: 50%;
+    padding: rem(2) rem(6) rem(0) rem(6);
+}
+
+//
+
+//style nav_list_item
+@mixin item {
+    @include numb;
+    @include icon;
+    @include text;
+}
+
+    //style nav_list_item_numb
+    @mixin numb {
+        &__numb{
+            display: inline-block;
+            color: $primary-light ;
+            background-color:  $primary-dark;
+            @include circle;
+            position: absolute;
+            left: rem(-10);
+    }
+
+}
+
+    //style nav_list_item_icon
+
+    @mixin icon {
+        &__icon {
+            display: inline-block;
+            width: 10%;
+            text-align: center;
+            color: $grey;
+            
+        }
+        &__icon--active{
+            @include icon-active;
+        }
+    }
+
+    // style nav_list_item_text
+
+    @mixin text {
+        &__text{
+            text-align: center;
+            display: inline-block;
+            width: 80%;
+            
+    
+        }
+    }
+
+
+    
+    
+
+
