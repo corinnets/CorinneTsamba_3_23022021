@@ -1,0 +1,22 @@
+.topbar_search{
+
+    > input{
+        color: $grey-dark;
+        font-weight: $fw-b;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        padding-top: rem(5);
+        padding-bottom: rem(5);
+        background-color: $grey-light ;
+
+    }
+    > i {
+        position: absolute;
+        top: 7%;
+        left: 30%;
+        color: $grey-dark;
+        font-weight: $fw-b;
+    }
+
+}

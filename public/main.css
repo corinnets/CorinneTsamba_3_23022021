@@ -1,6 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap");
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #000;
+  font-size: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
@@ -48,8 +68,49 @@ td, th {
   padding: 0;
 }
 
-p {
-  font-size: 10px;
+.btn {
+  color: #fff;
+  padding: 1.25rem 0.625rem;
+  border-radius: 10px;
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+
+.topbar_detail {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+  background-color: #F6F6F6;
+}
+.topbar_detail_heading {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+.topbar_detail > p {
+  font-weight: 400;
+  color: #757575;
+  padding-top: 1.5625rem;
+  padding-bottom: 2.1875rem;
+}
+
+.topbar_search > input {
+  color: #545454;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  background-color: #EAEAEA;
+}
+.topbar_search > i {
+  position: absolute;
+  top: 7%;
+  left: 30%;
+  color: #545454;
+  font-weight: 700;
+}
+
+.topbar {
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -6,24 +6,31 @@
 @import 'Abstracts/colors';
 @import 'Abstracts/type';
 
-//2. Base styles
+//2. Utils
+@import'Utils/variables';
+@import'Utils/mixins';
+@import'Utils/functions';
+
+//3. Base styles
 @import'Base/base';
 @import'Base/reset';
 
 
-//3. Components
+//4. Components
 @import'Componants/buttons';
 
-//4. Layout
+//5. Layout
+@import'Layout/topbardetail';
+@import'Layout/searchbar';
 @import'Layout/header';
 @import'Layout/nav';
 @import'Layout/footer';
 
 
-
-
-//5. Pages
+//6. Pages
 @import'Pages/home';
 @import'Pages/restaurant';
 
-p{ font-size: 10px;}
+
+
+

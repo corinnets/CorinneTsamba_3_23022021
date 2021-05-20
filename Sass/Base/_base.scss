@@ -1,3 +1,31 @@
-* ,*::after, *::before {
+* ,
+*::after, 
+*::before {
     box-sizing: border-box;
 }
+
+html{
+    
+    font-size: 16px;
+}
+
+body{
+    font-family: $ff-text;
+    font-weight: $fw-n;
+    color: $text-main;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+body h1{
+    font-weight: $fw-b;
+    font-size: 1.5rem;
+   
+
+}
+
+
+
+

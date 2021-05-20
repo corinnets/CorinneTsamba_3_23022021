@@ -1,8 +1,25 @@
-$primary: #9356DC;
-$secondary: #FF79DA;
-$tertiary: #99E2D0;
-$white: #fff;
+$primary-dark: #9356DC;
+$primary-light: #F5EDFF;
+$secondary-dark: #FF79DA;
+$tertiary-light: #99E2D0;
+$tertiary-dark: #008665;
+$white1: #fff;
+$white2: #F6F6F6;
+$grey: #757575;
+$grey-light:#EAEAEA;
+$grey-dark: #545454; 
 $black: #000;
 
+
+
 $text-main: $black;
-$text-inverse:$white;
+$text-inverse:$white2;
+$text-tag: $tertiary-dark;
+$text-white: $white1;
+
+
+$grey-icon:$grey-light;
+$violet-icon:$primary-dark;
+$grey-heart:$grey;
+
+

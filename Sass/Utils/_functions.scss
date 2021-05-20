@@ -1,0 +1,5 @@
+//calcul  px en rem
+@function rem ($size, $base:16){
+    
+    @return 1rem * $size / $base;
+}

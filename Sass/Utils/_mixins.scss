@@ -1,0 +1,9 @@
+// mixin colors
+@mixin gradient-btn  {
+    background: linear-gradient($secondary-dark,$primary-dark);
+}
+
+@mixin background-white2 {
+    background-color:$white2 ;
+    
+}

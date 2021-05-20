@@ -1,0 +1,7 @@
+.btn{
+    color: $text-white;
+    padding: rem(20) rem(10);
+    border-radius: 10px;
+    @include gradient-btn;
+
+}

@@ -5,22 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/main.css">
+    <script src="https://kit.fontawesome.com/b44ed38a08.js" crossorigin="anonymous"></script>
     <title>Découbrez des restaurants d'exception et Réservez votre menu</title>
 </head>
 <body>
     <header class="topbar">
         <div class="topbar_logo">
-            <img src="./assets/images/logo/ohmyfood@2x.svg" alt="logo_ohmyfood">
+            <img src="./assets/images/logo/ohmyfood@2x.svg" alt="logo_ohmyfood" class="logo_img">
         </div>
-        <div class="search-area">
-            <input type="search" name="heloo" id="">
-            <i class="fas fa-map-marker-alt"></i>
-            <h1 class="topbar_heading">
+        <div class="topbar_search">
+            <input type="text" class="topbar_search-input" value="Paris, Belleville">
+            <i class="fas fa-map-marker-alt map_icon"></i>
+        </div>
+        <div class="topbar_detail">
+            <h1 class="topbar_detail_heading">
                 Réservez le menu qui vous convient
             </h1>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-            <button class="btn">Explorer nos restaurants</button>
+            <p class="topbar_detail_text">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+            <button type="button" class="btn">Explorer nos restaurants</button>
         </div>
+        
     </header>
     <nav class="nav_order">
         <h2>Fonctionnement</h2>
