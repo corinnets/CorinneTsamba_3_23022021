@@ -1,13 +1,13 @@
 .topbar_detail{
     padding-top: rem(50);
     padding-bottom: rem(50);
-    @include background-white2;
+    @include background($white2);
 
     &_heading{
         padding-top: rem(0);
         padding-bottom: rem(0);
     }
-    >p{
+    > p{
         font-weight: $fw-n;
         color: $grey;
         padding-top: rem(25);

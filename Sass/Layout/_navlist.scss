@@ -1,19 +1,16 @@
 .nav__list{
     position: relative;
-    border: 1px solid green;
     &__item{
         text-decoration: none;
         padding: rem(25) rem(30) ;
         margin-top:rem(20) ;
-        @include background-white2;
+        @include background($white2);
         border-radius: rem(20);
         @include item;
     }
         
     &__item--active{
-        @include background-primary-light;
-       
-
-
+        @include background($primary-light);
+    
     }
 }

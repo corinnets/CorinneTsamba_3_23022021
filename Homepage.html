@@ -42,43 +42,81 @@
     <section class="restau">
         <h2 class="restau__heading">Restaurants</h2>
         <picture class="restau__card">
-            <span class="restau_card__info__tag">Nouveau</span>
-            <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restau la pallette du goût">
-            <div class="restau__card__name">La palette du goût</div>
-            <div class="restau_card__info">
-                <div class="restau_card__info__location">Ménilmontant</div>
-                <div class="restau_card__info__rate"><i class="far fa-heart"></i></div>
+            <div class="restau__card__frame" >
+                <span class="restau__card__frame__tag">Nouveau</span>
+                <img class="restau__card__frame__img" src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restau la pallette du goût">
+            </div>
+            <div class="restau__card__info">
+                <div class="restau__card__info__text">
+                    <h3 class="restau__card__name">La palette du goût</h3>
+                    <p class="restau__card__info__location">Ménilmontant</p>
+                </div>
+                <div class="restau__card__info__rate">
+                    <i class="far fa-heart"></i>
+                </div>
             </div>
         </picture>
-        <picture class="restau_card">
-            <img src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="restau la note enchantée">
-            <div class="restau__card__name">La note enchantée</div>
-            <div class="restau_location">Charonne</div>
-            <div class="restau_tag">Nouveau</div>
-            <div class="restau_rate"><i class="far fa-heart heart--pink"></i></div>
+        <picture class="restau__card">
+            <div class="restau__card__frame" >
+                <span class="restau__card__frame__tag">Nouveau</span>
+                <img class="restau__card__frame__img" src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="restau la note enchantée">
+            </div>
+            <div class="restau__card__info">
+                <div class="restau__card__info__text">
+                    <h3 class="restau__card__name">La note enchantée</h3>
+                    <p class="restau__card__info__location">Charonne</p>
+                </div>
+                <div class="restau__card__info__rate restau__card__info__rate--active">
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+            <i class="far fa-hand-pointer restau__card__pointer"></i>
         </picture>
-        <picture class="restau_card">
-            <img src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restau A la française">
-            <div class="restau__card__name">A la française</div>
-            <div class="restau_location">Cité Rouge</div>
-            <div class="restau_rate"><i class="far fa-heart"></i></div>
+        <picture class="restau__card">
+            <div class="restau__card__frame" >
+                
+                <img class="restau__card__frame__img" src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restau A la française">
+            </div>
+            <div class="restau__card__info">
+                <div class="restau__card__info__text">
+                    <h3 class="restau__card__name">A la française</h3>
+                    <p class="restau__card__info__location">Cité Rouge</p>
+                </div>
+                <div class="restau__card__info__rate">
+                    <i class="far fa-heart heart"></i>
+                </div>
+            </div>
         </picture>
-        <picture class="restau_card">
-            <img src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="restau Le délice des sens">
-            <div class="restau__card__name">Le délice des sens</div>
-            <div class="restau_location">Folie-Méricourt</div>
-            <div class="restau_rate"><i class="far fa-heart"></i></div>
+        <picture class="restau__card">
+            <div class="restau__card__frame" >
+                <img class="restau__card__frame__img" src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="restau Le délice des sens">
+            </div>
+            <div class="restau__card__info">
+                <div class="restau__card__info__text">
+                    <h3 class="restau__card__name">Le délice des sens</h3>
+                    <p class="restau__card__info__location">Folie-Méricourt</p>
+                </div>
+                <div class="restau__card__info__rate">
+                    <i class="far fa-heart heart"></i>
+                </div>
+            </div>
         </picture>
     </section>
-    <footer>
+    <footer class="footer">
         <div>
-            <img src="./assets/images/logo/ohmyfood@2x.svg" alt="">
+            <p class="footer__logo">ohmyfood</p>
         </div>
-        <ul>
-            <li>Proposer un restaurant</li>
-            <li>Devenir partenaire</li>
-            <li>Mentions légales</li>
-            <li> <a href="mailto"> Contact</a></li>
+        <ul class="footer__list" >
+            <li class="footer__list__item">
+                <i class="fas fa-utensils"></i>
+                Proposer un restaurant
+            </li>
+            <li class="footer__list__item">
+                <i class="fas fa-hands-helping"></i>
+                Devenir partenaire
+            </li>
+            <li class="footer__list__item">Mentions légales</li>
+            <li class="footer__list__item"> <a href="mailto"> Contact</a></li>
         </ul>
 
     </footer>
