@@ -146,6 +146,21 @@
 }
 
 
+//mixin for responsive layout
+
+@mixin tablet {
+    @media screen and (min-width:($breakpoints, tablet)) {
+        @content;
+    }
+    
+}
+
+@mixin desktop{
+    @media screen and (min-width:($breakpoints, desktop)){
+        @content;
+    }
+
+} 
 
 
     

@@ -1,3 +1,8 @@
 .nav{
     padding: rem(50) rem(20);
+    
+    @include tablet{
+
+        padding: rem(500) rem(200);
+    }
 }

@@ -137,7 +137,9 @@ td, th {
 
 .nav__list {
   position: relative;
+
 }
+  
 .nav__list__item {
   padding: 1.5625rem 1.875rem;
   margin-top: 1.25rem;
