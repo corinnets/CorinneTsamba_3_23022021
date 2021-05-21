@@ -6,15 +6,15 @@
         width: 100%;
         text-align: center;
         position: relative;
-        padding-top: rem(5);
-        padding-bottom: rem(5);
+        padding-top: rem(10);
+        padding-bottom: rem(10);
         background-color: $grey-light ;
 
     }
     > i {
         position: absolute;
-        top: 7%;
-        left: 30%;
+        top: rem(83);
+        left: rem(115);
         color: $grey-dark;
         font-weight: $fw-b;
     }

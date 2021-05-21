@@ -4,6 +4,10 @@
     flex-direction: column;
     margin-bottom: rem(20);
     position: relative;
+    border-radius: rem(15);
+    
+    @include shadow-btn($grey-light);
+
     
     &__frame{
         @include frame;

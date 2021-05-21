@@ -85,10 +85,16 @@ td, th {
   margin: auto;
   border-radius: 3.125rem;
   background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-box-shadow: 3px 3px 3px #757575, 3px 3px 3px #757575;
+  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 3px 3px 3px #757575, 3px 3px 3px #757575;
+  /* Firefox 3.5 - 3.6 */
+  box-shadow: 3px 3px 3px #757575, -3px 3px 3px #757575;
+  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 
 .topbar_detail {
-  padding-top: 3.125rem;
+  padding-top: 2.1875rem;
   padding-bottom: 3.125rem;
   background-color: #F6F6F6;
 }
@@ -100,7 +106,7 @@ td, th {
   font-weight: 400;
   color: #757575;
   padding-top: 1.5625rem;
-  padding-bottom: 2.1875rem;
+  padding-bottom: 1.875rem;
 }
 
 .topbar_search > input {
@@ -109,14 +115,14 @@ td, th {
   width: 100%;
   text-align: center;
   position: relative;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
   background-color: #EAEAEA;
 }
 .topbar_search > i {
   position: absolute;
-  top: 7%;
-  left: 30%;
+  top: 5.1875rem;
+  left: 7.1875rem;
   color: #545454;
   font-weight: 700;
 }
@@ -124,16 +130,25 @@ td, th {
 .topbar {
   text-align: center;
 }
+.topbar_logo {
+  margin-top: 1.25rem;
+  margin-bottom: 0.9375rem;
+}
 
 .nav__list {
   position: relative;
 }
 .nav__list__item {
-  text-decoration: none;
   padding: 1.5625rem 1.875rem;
   margin-top: 1.25rem;
   background-color: #F6F6F6;
   border-radius: 1.25rem;
+  -webkit-box-shadow: 3px 3px 3px #EAEAEA, 3px 3px 3px #EAEAEA;
+  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 3px 3px 3px #EAEAEA, 3px 3px 3px #EAEAEA;
+  /* Firefox 3.5 - 3.6 */
+  box-shadow: 3px 3px 3px #EAEAEA, -3px 3px 3px #EAEAEA;
+  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 .nav__list__item__numb {
   display: inline-block;
@@ -148,17 +163,16 @@ td, th {
 }
 .nav__list__item__icon {
   display: inline-block;
-  width: 10%;
-  text-align: center;
+  width: 20%;
   color: #757575;
 }
 .nav__list__item__icon--active {
   color: #9356DC;
 }
 .nav__list__item__text {
-  text-align: center;
   display: inline-block;
-  width: 80%;
+  color: #353535;
+  font-weight: 700;
 }
 .nav__list__item--active {
   background-color: #F5EDFF;
@@ -174,6 +188,13 @@ td, th {
   flex-direction: column;
   margin-bottom: 1.25rem;
   position: relative;
+  border-radius: 0.9375rem;
+  -webkit-box-shadow: 3px 3px 3px #EAEAEA, 3px 3px 3px #EAEAEA;
+  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 3px 3px 3px #EAEAEA, 3px 3px 3px #EAEAEA;
+  /* Firefox 3.5 - 3.6 */
+  box-shadow: 3px 3px 3px #EAEAEA, -3px 3px 3px #EAEAEA;
+  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 .restau__card__frame {
   position: relative;
@@ -210,7 +231,7 @@ td, th {
 }
 .restau__card__info__rate {
   font-size: 1.5rem;
-  color: #545454;
+  color: #353535;
 }
 .restau__card__info__rate--active {
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
@@ -226,10 +247,32 @@ td, th {
 
 .restau {
   background-color: #F6F6F6;
-  padding: 3.125rem 1.25rem;
+  padding: 2.5rem 1.25rem;
 }
 .restau__heading {
   margin-bottom: 1.5625rem;
+}
+
+.footer {
+  padding: 1.875rem 1.25rem;
+  background-color: #353535;
+  color: #F6F6F6;
+}
+.footer__logo {
+  font-family: "Shrikhand", cursive;
+  margin-bottom: 0.625rem;
+}
+.footer__list > li {
+  margin-bottom: 0.3125rem;
+}
+.footer__list > li i {
+  display: inline-block;
+  font-size: 0.8rem;
+  width: 1.25rem;
+}
+.footer__list > li a {
+  text-decoration: none;
+  color: #F6F6F6;
 }
 
 /*# sourceMappingURL=main.css.map */
