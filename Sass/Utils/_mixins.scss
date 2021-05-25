@@ -66,8 +66,9 @@
     @mixin icon {
         &__icon {
             display: inline-block;
-            width: 20%;
+            width: 10%;
             color: $grey;
+            border: 1px solid red;
             
         }
         &__icon--active{
@@ -81,8 +82,10 @@
         &__text{
             
             display: inline-block;
+            width: 90%;
             color: $grey-super-dark;
             font-weight: $fw-b;
+            border: 1px solid green;
          
         }
     }
@@ -149,14 +152,14 @@
 //mixin for responsive layout
 
 @mixin tablet {
-    @media screen and (min-width:($breakpoints, tablet)) {
+    @media screen and (min-width:map-get($breakpoints, tablet)) {
         @content;
     }
     
 }
 
 @mixin desktop{
-    @media screen and (min-width:($breakpoints, desktop)){
+    @media screen and (min-width:map-get($breakpoints, desktop)){
         @content;
     }
 
