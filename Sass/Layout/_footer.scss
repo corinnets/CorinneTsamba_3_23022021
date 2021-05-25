@@ -2,6 +2,9 @@
     padding: rem(30) rem(20);
     @include background($grey-super-dark);
     color: $text-inverse;
+    @include desktop{
+        text-align: center
+    }
 
     &__logo{
         @include footer-logo;

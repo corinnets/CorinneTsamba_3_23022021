@@ -7,10 +7,16 @@
     border-radius: rem(15);
     
     @include shadow-btn($grey-light);
+    @include desktop{
+        height: rem(350);
+    }
 
     
     &__frame{
         @include frame;
+        @include desktop {
+            height: rem(270);
+        }
   
     }
     &__info{

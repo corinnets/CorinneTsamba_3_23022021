@@ -97,6 +97,7 @@
 @mixin frame {
     position: relative;
     height: rem(175);
+
     &__img{
     object-fit: cover;
     width: 100%;

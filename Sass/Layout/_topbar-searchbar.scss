@@ -17,6 +17,14 @@
         left: rem(115);
         color: $grey-dark;
         font-weight: $fw-b;
+        @include tablet{
+            
+            left: rem(285);
+        }
+        @include desktop{
+            left: rem(580);
+
+        }
     }
 
 }

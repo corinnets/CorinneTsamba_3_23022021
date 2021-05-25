@@ -92,6 +92,16 @@ td, th {
   box-shadow: 3px 3px 3px #757575, -3px 3px 3px #757575;
   /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
+@media screen and (min-width: 768px) {
+  .btn {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 1340px) {
+  .btn {
+    width: 30%;
+  }
+}
 
 .topbar_detail {
   padding-top: 2.1875rem;
@@ -127,6 +137,16 @@ td, th {
   left: 7.1875rem;
   color: #545454;
   font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .topbar_search > i {
+    left: 17.8125rem;
+  }
+}
+@media screen and (min-width: 1340px) {
+  .topbar_search > i {
+    left: 36.25rem;
+  }
 }
 
 .topbar {
@@ -215,6 +235,11 @@ td, th {
   box-shadow: 3px 3px 3px #EAEAEA, -3px 3px 3px #EAEAEA;
   /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
+@media screen and (min-width: 1340px) {
+  .restau__card {
+    height: 21.875rem;
+  }
+}
 .restau__card__frame {
   position: relative;
   height: 10.9375rem;
@@ -236,6 +261,11 @@ td, th {
   position: absolute;
   right: 0;
   margin-top: 0.625rem;
+}
+@media screen and (min-width: 1340px) {
+  .restau__card__frame {
+    height: 16.875rem;
+  }
 }
 .restau__card__info {
   background-color: #fff;
@@ -271,11 +301,23 @@ td, th {
 .restau__heading {
   margin-bottom: 1.5625rem;
 }
+@media screen and (min-width: 768px) {
+  .restau > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+}
 
 .footer {
   padding: 1.875rem 1.25rem;
   background-color: #353535;
   color: #F6F6F6;
+}
+@media screen and (min-width: 1340px) {
+  .footer {
+    text-align: center;
+  }
 }
 .footer__logo {
   font-family: "Shrikhand", cursive;
