@@ -68,8 +68,6 @@
             display: inline-block;
             width: 10%;
             color: $grey;
-            border: 1px solid red;
-            
         }
         &__icon--active{
             @include icon-active;
@@ -85,7 +83,7 @@
             width: 90%;
             color: $grey-super-dark;
             font-weight: $fw-b;
-            border: 1px solid green;
+            
          
         }
     }
@@ -119,6 +117,16 @@
     }
 }
 
+@mixin rate {
+    font-size: 1.5rem;
+        
+    >a{
+        color: $grey-super-dark;
+    }
+ 
+    
+}
+
 
 @mixin info {
     @include background($white1);
@@ -132,16 +140,15 @@
     
     
     &__rate{
-        font-size: 1.5rem;
-        color: $grey-super-dark;
-        
-        &--active{
-            @include gradient-heart;
-        }
+        @include rate;
         
     }
+         
+
+        
     
 }
+
 
 //mixin footer_logo
 

@@ -23,13 +23,7 @@
         @include background($white1);
         @include info;
     }
-    &__pointer{
-        font-size: 2rem;
-        position: absolute;
-        bottom: rem(5);
-        right: rem(2);
-    }
-
+    
 
     
 }
