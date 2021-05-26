@@ -23,22 +23,19 @@
 
 //5. Layout
 
-@import'Layout/topbardetail';
-@import'Layout/topbar-searchbar';
-@import'Layout/header';
-@import'Layout/navlist';
-@import'Layout/nav';
-@import'Layout/restau-card';
-@import'Layout/restau-section';
-@import'Layout/footer';
-
-
-
+@import'Layout-home/topbardetail';
+@import'Layout-home/topbar-searchbar';
+@import'Layout-home/header';
+@import'Layout-home/navlist';
+@import'Layout-home/nav';
+@import'Layout-home/restau-card';
+@import'Layout-home/restau-section';
+@import'Layout-home/footer';
 
 
 //6. Pages
 @import'Pages/home';
-@import'Pages/restaurant';
+
 
 
 
