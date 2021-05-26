@@ -1,0 +1,18 @@
+.restau{
+    @include background($white2);
+    padding: rem(40) rem(20);
+    
+    &__heading{
+        margin-bottom: rem(25);
+    }
+
+    > div{
+        
+        @include tablet{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: rem(20);
+        }
+    }
+    
+}

@@ -1,0 +1,17 @@
+.btn{
+    width: 60%;
+    color: $text-white;
+    padding: rem(15);
+    margin: auto;
+    border-radius: rem(50);
+    @include gradient-btn;
+    @include shadow-btn($grey);
+    @include tablet{
+        width: 30%;
+    }
+
+    @include desktop{
+        width: 30%;
+    }
+
+}

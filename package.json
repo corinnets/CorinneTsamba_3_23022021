@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./Sass/main.scss:./css/style.css"
+    "sass": "sass --watch ./Sass/:./public/"
+    
+    
   },
   "author": "corinne",
   "license": "ISC"

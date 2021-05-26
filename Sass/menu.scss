@@ -7,8 +7,8 @@
 @import 'Abstracts/type';
 
 //2. Utils
-
 @import'Utils/mixins-home';
+@import'Utils/mixins-menu';
 @import'Utils/functions';
 @import'Utils/variables';
 
@@ -23,13 +23,10 @@
 
 //5. Layout
 
-@import'Layout-home/topbardetail';
-@import'Layout-home/topbar-searchbar';
-@import'Layout-home/header';
-@import'Layout-home/navlist';
-@import'Layout-home/nav';
-@import'Layout-home/restau-card';
-@import'Layout-home/restau-section';
+@import'Layout-menu/header';
+@import'Layout-menu/starter';
+@import'Layout-menu/plat';
+@import'Layout-menu/desert';
 @import'Layout-home/footer';
 
 

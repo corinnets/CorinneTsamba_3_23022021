@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #000;
+  font-size: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+body h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+body h3 {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+.btn {
+  width: 60%;
+  color: #fff;
+  padding: 0.9375rem;
+  margin: auto;
+  border-radius: 3.125rem;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-box-shadow: 3px 3px 3px #757575, 3px 3px 3px #757575;
+  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 3px 3px 3px #757575, 3px 3px 3px #757575;
+  /* Firefox 3.5 - 3.6 */
+  box-shadow: 3px 3px 3px #757575, -3px 3px 3px #757575;
+  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+@media screen and (min-width: 768px) {
+  .btn {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 1340px) {
+  .btn {
+    width: 30%;
+  }
+}
+
+.footer {
+  padding: 1.875rem 1.25rem;
+  background-color: #353535;
+  color: #F6F6F6;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+}
+.footer__logo {
+  font-family: "Shrikhand", cursive;
+  margin-bottom: 0.625rem;
+}
+.footer__list > li {
+  margin-bottom: 0.3125rem;
+}
+.footer__list > li i {
+  display: inline-block;
+  font-size: 0.8rem;
+  width: 1.25rem;
+}
+.footer__list > li a {
+  text-decoration: none;
+  color: #F6F6F6;
+}
+
+/*# sourceMappingURL=menu.css.map */
