@@ -14,8 +14,6 @@ body {
   font-weight: 400;
   color: #000;
   font-size: 1rem;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 body h1 {
@@ -79,10 +77,14 @@ td, th {
 }
 
 .btn {
-  width: 60%;
+  width: 70%;
   color: #fff;
+  text-align: center;
   padding: 0.9375rem;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
   border-radius: 3.125rem;
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-box-shadow: 3px 3px 3px #757575, 3px 3px 3px #757575;
@@ -105,7 +107,7 @@ td, th {
 
 .topbar_detail {
   padding-top: 2.1875rem;
-  padding-bottom: 3.125rem;
+  padding-bottom: 2.1875rem;
   background-color: #F6F6F6;
 }
 .topbar_detail_heading {
@@ -116,7 +118,6 @@ td, th {
   font-weight: 400;
   color: #757575;
   padding-top: 1.5625rem;
-  padding-bottom: 1.875rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
@@ -281,8 +282,17 @@ td, th {
 .restau__card__info__rate {
   font-size: 1.5rem;
 }
-.restau__card__info__rate > a {
+.restau__card__info__rate > a > i {
   color: #353535;
+}
+.restau__card__info__rate > a > i:hover {
+  font-weight: 900;
+  color: #9356DC;
+  background: -webkit-linear-gradient(to top, #FF79DA 0%, #9356DC 100%);
+  background: -moz-linear-gradient(to top, #FF79DA 0%, primary-dark 100%);
+  background: linear-gradient(to top, #FF79DA 0%, #9356DC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .restau {

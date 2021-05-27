@@ -1,0 +1,20 @@
+.desert{
+
+    &__title{
+      @include menu-title;
+    }
+
+    &__detail{
+        display: flex;
+        flex-direction: column;
+        gap: rem(15);
+
+        @include menu-detail-card;
+            
+            
+    }
+    
+    
+    
+
+}

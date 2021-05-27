@@ -3,10 +3,18 @@
     background: linear-gradient($secondary-dark,$primary-dark);
 }
 
-@mixin gradient-heart {
+@mixin gradient-background {
     
     background: -webkit-linear-gradient($primary-dark, $secondary-dark);
     background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin gradient-heart {
+    background: -webkit-linear-gradient(to top,  $secondary-dark 0% ,$primary-dark 100%);
+    background: -moz-linear-gradient(to top,  $secondary-dark 0% ,primary-dark 100%);
+    background: linear-gradient(to top,  $secondary-dark 0% ,$primary-dark 100%);
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -120,8 +128,20 @@
 @mixin rate {
     font-size: 1.5rem;
         
-    >a{
+    >a >i{
         color: $grey-super-dark;
+        
+
+       
+    }
+    >a>i:hover{
+        font-weight: 900;
+        color: $primary-dark;
+        @include gradient-heart;
+
+
+
+
     }
  
     

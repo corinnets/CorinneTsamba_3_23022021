@@ -8,7 +8,7 @@
 
 //2. Utils
 
-@import'Utils/mixins-home';
+@import'Utils/mixins-index';
 @import'Utils/functions';
 @import'Utils/variables';
 
@@ -23,18 +23,18 @@
 
 //5. Layout
 
-@import'Layout-home/topbardetail';
-@import'Layout-home/topbar-searchbar';
-@import'Layout-home/header';
-@import'Layout-home/navlist';
-@import'Layout-home/nav';
-@import'Layout-home/restau-card';
-@import'Layout-home/restau-section';
-@import'Layout-home/footer';
+@import'Layout-index/topbardetail';
+@import'Layout-index/topbar-searchbar';
+@import'Layout-index/header';
+@import'Layout-index/navlist';
+@import'Layout-index/nav';
+@import'Layout-index/restau-card';
+@import'Layout-index/restau-section';
+@import'Layout-index/footer';
 
 
 //6. Pages
-@import'Pages/home';
+@import'Pages/index';
 
 
 

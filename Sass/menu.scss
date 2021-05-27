@@ -7,7 +7,7 @@
 @import 'Abstracts/type';
 
 //2. Utils
-@import'Utils/mixins-home';
+@import'Utils/mixins-index';
 @import'Utils/mixins-menu';
 @import'Utils/functions';
 @import'Utils/variables';
@@ -22,16 +22,16 @@
 @import'Componants/buttons';
 
 //5. Layout
-
+@import'Layout-menu/main-section';
 @import'Layout-menu/header';
 @import'Layout-menu/starter';
-@import'Layout-menu/plat';
+@import'Layout-menu/dish';
 @import'Layout-menu/desert';
-@import'Layout-home/footer';
+@import'Layout-index/footer';
 
 
 //6. Pages
-@import'Pages/home';
+@import'Pages/index';
 
 
 

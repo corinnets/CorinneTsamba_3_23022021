@@ -1,8 +1,13 @@
 .btn{
-    width: 60%;
+    width: 70%;
     color: $text-white;
+    text-align: center;
     padding: rem(15);
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: rem(40);
+    margin-bottom: rem(40);
+
     border-radius: rem(50);
     @include gradient-btn;
     @include shadow-btn($grey);
