@@ -1,4 +1,11 @@
 .dish{
+  @include tablet{
+    flex-basis: 44%;
+  }
+  @include desktop{
+    flex-basis:auto;
+
+  }
 
     &__title{
       @include menu-title;

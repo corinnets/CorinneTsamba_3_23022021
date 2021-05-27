@@ -1,5 +1,5 @@
 .btn{
-    width: 70%;
+    width: 50%;
     color: $text-white;
     text-align: center;
     padding: rem(15);
@@ -16,7 +16,7 @@
     }
 
     @include desktop{
-        width: 30%;
+        width: 20%;
     }
 
 }

@@ -77,7 +77,7 @@ td, th {
 }
 
 .btn {
-  width: 70%;
+  width: 50%;
   color: #fff;
   text-align: center;
   padding: 0.9375rem;
@@ -101,7 +101,7 @@ td, th {
 }
 @media screen and (min-width: 1340px) {
   .btn {
-    width: 30%;
+    width: 20%;
   }
 }
 
@@ -123,6 +123,22 @@ td, th {
 .menu__heading__icon {
   font-size: 1.5rem;
 }
+@media screen and (min-width: 768px) {
+  .menu__heading {
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1.875rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.875rem;
+    justify-content: space-evenly;
+  }
+}
 
 .topbar__info {
   padding-top: 0.625rem;
@@ -130,9 +146,20 @@ td, th {
   display: flex;
   align-items: center;
 }
-.topbar__icon-return {
+@media screen and (min-width: 768px) {
+  .topbar__info {
+    position: relative;
+  }
+}
+.topbar__info__icon-return {
   padding-left: 1.25rem;
   padding-right: 3.75rem;
+}
+@media screen and (min-width: 768px) {
+  .topbar__info__logo {
+    position: absolute;
+    right: 40%;
+  }
 }
 .topbar__img {
   height: 16.875rem;
@@ -140,7 +167,22 @@ td, th {
   background-position: center;
   background-image: url("../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 }
+@media screen and (min-width: 768px) {
+  .topbar__img {
+    height: 31.25rem;
+  }
+}
 
+@media screen and (min-width: 768px) {
+  .starter {
+    flex-basis: 35%;
+  }
+}
+@media screen and (min-width: 1340px) {
+  .starter {
+    flex-basis: auto;
+  }
+}
 .starter__title {
   text-transform: uppercase;
   font-weight: 400;
@@ -178,6 +220,16 @@ td, th {
   font-weight: 700;
 }
 
+@media screen and (min-width: 768px) {
+  .dish {
+    flex-basis: 44%;
+  }
+}
+@media screen and (min-width: 1340px) {
+  .dish {
+    flex-basis: auto;
+  }
+}
 .dish__title {
   text-transform: uppercase;
   font-weight: 400;
@@ -215,6 +267,16 @@ td, th {
   font-weight: 700;
 }
 
+@media screen and (min-width: 768px) {
+  .desert {
+    flex-basis: 40%;
+  }
+}
+@media screen and (min-width: 1340px) {
+  .desert {
+    flex-basis: auto;
+  }
+}
 .desert__title {
   text-transform: uppercase;
   font-weight: 400;

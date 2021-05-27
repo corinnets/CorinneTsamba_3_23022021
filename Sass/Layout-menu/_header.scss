@@ -7,6 +7,9 @@
         background-size: cover;
         background-position: center;
         background-image: url('../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg') ;
+        @include tablet{
+            height: rem(500);
+        }
     }
 
    

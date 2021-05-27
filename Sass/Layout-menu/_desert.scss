@@ -1,7 +1,15 @@
 .desert{
+  @include tablet{
+    flex-basis: 40%;
+  }
+  @include desktop{
+    flex-basis:auto;
+
+  }
 
     &__title{
       @include menu-title;
+      
     }
 
     &__detail{

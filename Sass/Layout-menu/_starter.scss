@@ -1,7 +1,14 @@
 .starter{
+  @include tablet{
+    flex-basis: 35%;
+  }
+  @include desktop{
+    flex-basis:auto;
+  }
 
     &__title{
       @include menu-title;
+      
     }
 
     &__detail{

@@ -1,9 +1,10 @@
+//map breakpoint
 $breakpoints:(
     tablet: 768px,
     desktop: 1340px
 );
 
 
-$tabletscreen:"screen and (min-width: map-get($breakpoints ,tablet))"
+//$tabletscreen:"screen and (min-width: map-get($breakpoints ,tablet))" - version Graphikart
 
     
