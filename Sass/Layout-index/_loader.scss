@@ -1,0 +1,52 @@
+.loader__message >span{
+    @include footer-logo;
+
+}
+
+.loader__bloc__item{
+    padding: rem(10) rem(16);
+    border-radius: 50%;
+    @include gradient-heart;
+    border: 1px solid $grey-light;
+    -webkit-animation: loader-bloc 2s linear infinite;
+    animation: loader-bloc 3s linear infinite;
+
+}
+
+
+
+.loader{
+    text-align: center;
+    &__message{
+        font-weight: 300;
+        animation-name: loader-message;
+        animation-duration: 1s
+
+    }
+
+    &__bloc{
+        
+        display: flex;
+        flex-direction: row;
+        gap: rem(10);
+        
+    }
+        
+   }
+
+@keyframes loader-message{
+    
+    0% { bottom:-100px; opacity:0 } 
+    90% { bottom:0px; opacity:1 }
+    99%{
+
+    }
+
+}
+
+@keyframes loader-bloc{
+    50% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+
+
+}
