@@ -69,6 +69,10 @@
     
 }
 
+
+
+
+
 @mixin price{
     &__price{
         font-weight: $fw-b;
@@ -95,15 +99,14 @@
         background-color: $white1;
         border-radius: rem(15);
         padding: rem(10) rem(10);
-
         @include menu-detail-card-name;
         @include menu-detail-card-info;
+        
         
 
     }
 
-
-        
+    
 
 
         

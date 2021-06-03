@@ -14,6 +14,7 @@ body {
   font-weight: 400;
   color: #000;
   font-size: 1rem;
+  position: relative;
 }
 
 body h1 {
@@ -339,6 +340,49 @@ td, th {
 .footer__list > li a {
   text-decoration: none;
   color: #F6F6F6;
+}
+
+.card1 {
+  animation-name: card1;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.card2 {
+  animation-name: card2;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.card3 {
+  animation-name: card3;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes card1 {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes card2 {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 40px;
+  }
+}
+@keyframes card3 {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 80px;
+  }
 }
 
 /*# sourceMappingURL=menu.css.map */
