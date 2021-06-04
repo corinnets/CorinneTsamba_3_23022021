@@ -17,8 +17,12 @@ body{
     color: $text-main;
     font-size: 1rem;
     position: relative;
+       
     
-    
+}
+
+body a{
+    text-decoration: none;
 }
 
 body h1{
@@ -36,6 +40,11 @@ body h3{
     font-weight: $fw-b;
     font-size: 1rem;
 
+}
+
+.container a{
+    text-decoration: none;
+    color: $text-main;
 }
 
 

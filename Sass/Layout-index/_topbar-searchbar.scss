@@ -1,31 +1,26 @@
-.topbar_search{
 
+
+.topbar__search{
+    position: relative;
+
+    @include locate;
     > input{
         color: $grey-dark;
         font-weight: $fw-b;
-        width: 100%;
+        display: block;
+        border-right-style: hidden;
+        border-left-style: hidden;
+
+        width: 375px;
         text-align: center;
-        position: relative;
         padding-top: rem(10);
         padding-bottom: rem(10);
         background-color: $grey-light ;
-
-    }
-    > i {
-        position: absolute;
-        top: rem(83);
-        left: rem(115);
-        color: $grey-dark;
-        font-weight: $fw-b;
-        @include tablet{
-            
-            left: rem(285);
-        }
-        @include desktop{
-            left: rem(580);
-
-        }
+        margin: auto;
         
+
     }
+    
+    
 
 }

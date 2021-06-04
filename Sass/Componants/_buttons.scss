@@ -11,6 +11,7 @@
     border-radius: rem(50);
     @include gradient-btn;
     @include shadow-btn($grey);
+    
     @include tablet{
         width: 30%;
     }
@@ -18,5 +19,11 @@
     @include desktop{
         width: 20%;
     }
+    @include btn-hover;
 
 }
+
+/*.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);*/

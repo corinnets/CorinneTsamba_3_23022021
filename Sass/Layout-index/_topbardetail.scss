@@ -1,11 +1,12 @@
-.topbar_detail{
+.topbar__detail{
     padding-top: rem(35);
     padding-bottom: rem(35);
     @include background($white2);
 
-    &_heading{
+    &__heading{
         padding-top: rem(0);
         padding-bottom: rem(0);
+        
     }
     > p{
         font-weight: $fw-n;
@@ -14,6 +15,7 @@
         padding-left: rem(20);
         padding-right: rem(20);
 
+        
     }
     
 }

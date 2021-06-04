@@ -34,6 +34,39 @@
     box-shadow: 3px 3px 3px  $color,
                 -3px 3px 3px  $color;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
+
+//mixinn button
+@mixin btn-hover {
+        &:hover{
+            background:red;
+        }
+    
+}
+
+//mixin de searchbar
+
+.icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  @mixin locate{
+   
+        &::before{
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 900;
+            content:'\f3c5';
+            position: absolute;
+            top:15%;
+            left:42%;
+            
+            
+        }
+            
+  }
 //mixin of nav_list_item
 @mixin item {
     @include numb;
@@ -140,7 +173,7 @@
 
            
     }
-    >a >i:after{
+    >a >i::after{
         content: '';
         background-color: green;
         position: absolute;
@@ -152,7 +185,7 @@
         transition: 5s;
     }
 
-    >a>i:hover:after{
+    >a>i:hover::after{
         height: 80%;
     }
 
