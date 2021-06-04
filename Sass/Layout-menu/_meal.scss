@@ -1,10 +1,11 @@
-.desert{
+
+.meal{
+  
   @include tablet{
-    flex-basis: 40%;
+    flex-basis: 35%;
   }
   @include desktop{
     flex-basis:auto;
-
   }
 
     &__title{

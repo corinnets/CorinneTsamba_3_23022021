@@ -64,6 +64,7 @@
         font-weight: $fw-b;
         padding-bottom: rem(5);
         
+        
 
     }
     
@@ -85,9 +86,10 @@
         display: flex;
         justify-content: space-between;
         padding-right: rem(10);
-        @include price;
         
-
+        @include price;
+       
+        
     }
     
 }
@@ -101,15 +103,63 @@
         padding: rem(10) rem(10);
         @include menu-detail-card-name;
         @include menu-detail-card-info;
-        
-        
+        position: relative;
 
+        >div{
+            
+            transition: all 500ms;
+        
+        }
+        
+              
     }
 
+    &__card::after{
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900;
+        content:'\f058';
+        background-color: $tertiary-light;
+        color: $white1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top:0;
+        right: 0;
+        height: 100%;
+        width: 0%;
+        opacity: 0;
+        z-index: 1;
+        transition: 500ms;
+            
+        }
+
     
+    &__card:hover::after{
+        opacity:1;
+        width:20%;
+        border-top-right-radius: rem(15);
+        border-bottom-right-radius: rem(15);
 
 
         
+         
+        
+        
+    }
+        
+
+    &__card:hover{
+
+        div{
+            
+            transform: translate3d(-20%, 0px, 0);
+            Color: red;
+
+        }
+    }
+
+  
             
 
         
