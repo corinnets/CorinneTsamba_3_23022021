@@ -155,6 +155,9 @@
             
             transform: translate3d(-20%, 0px, 0);
             Color: red;
+            white-space: nowrap;
+            overflow:hidden;
+            text-overflow: ellipsis;
 
         }
     }
