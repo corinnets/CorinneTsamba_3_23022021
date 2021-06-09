@@ -1,2 +1,52 @@
+.card1 {
+    animation-name: slideup1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+}
 
+.card2 {
+    animation-name: slideup2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 20ms;
+    animation-timing-function: ease-in-out;
 
+}
+
+.card3 {
+    animation-name: slideup3;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 30ms;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes slideup1 {
+    0% {
+        top: 30px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+@keyframes slideup2 {
+    0% {
+        top: 30px;
+    }
+    100% {
+        top: 5px;
+    }
+}
+
+@keyframes slideup3 {
+    0% {
+        top: 30px;
+    }
+    100% {
+        top: 10px;
+    }
+}
