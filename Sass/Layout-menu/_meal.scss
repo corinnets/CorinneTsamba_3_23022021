@@ -1,6 +1,7 @@
 
 .meal{
   
+  
   @include tablet{
     flex-basis: 35%;
   }
@@ -18,12 +19,12 @@
         flex-direction: column;
         gap: rem(15);
 
-        @include menu-detail-card;
+        @include detail-card;
+        
             
             
     }
-    
-    
-    
+   
 
 }
+

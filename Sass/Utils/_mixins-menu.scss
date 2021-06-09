@@ -45,6 +45,8 @@
 
 //mixin menu__section : starter, dish and desert
 
+
+
 @mixin menu-title{
     text-transform: uppercase;
     font-weight: 400;
@@ -59,114 +61,148 @@
 
 }
 
-@mixin menu-detail-card-name {
-    &__name{
+@mixin detail-card {
+    &__card{
+        display: flex;
+        background-color: $white1;
+        border-radius: rem(15);
+        position: relative;
+        @include card-info;
+        @include price;
+        @include card-icon;
+        -webkit-box-shadow: 1px 1px 10px 5px rgba(128, 128, 128, 0.178); 
+        box-shadow: 1px 1px 10px 5px rgba(128, 128, 128, 0.178);
+        justify-content: space-between;
+        @include detail-card-afterhover;
+     
+    }
+   
+}
+
+@mixin detail-card-afterhover{
+
+    &:hover {
+        @include price-afterhover;
+        @include card-icon-afterhover;
+        @include card_info-afterhover;
+    }
+}
+
+
+
+@mixin card-info{
+    .meal__detail__card__info{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        @include card-info-name;
+        @include card-info-sidename;
+        padding: rem(10) 0 rem(10) rem(10) ;
+
+      
+    }
+    
+}
+@mixin card_info-afterhover{
+    .meal__detail__card__info{
+        width: 65%;
+
+
+    }
+
+} 
+  
+@mixin card-info-name {
+    .name{
         font-weight: $fw-b;
         padding-bottom: rem(5);
-        
-        
+        white-space: nowrap;
+        overflow:hidden;
+        text-overflow: ellipsis;
 
     }
     
 }
 
+@mixin card-info-sidename {
+    .sidename{
+        white-space: nowrap;
+        overflow:hidden;
+        text-overflow: ellipsis;
+        
 
-
-
+    }
+    
+}
 
 @mixin price{
     &__price{
+        width: 10%;
         font-weight: $fw-b;
+        align-self: flex-end;
+        padding-bottom: rem(10);
+        padding-right: rem(20);
+        transition: all 300ms ease-in-out;
 
     }
 }
 
-@mixin menu-detail-card-info{
-    &__info{
-        display: flex;
-        justify-content: space-between;
-        padding-right: rem(10);
-        
-        @include price;
-       
-        
-    }
+
+@mixin price-afterhover {
     
+    .meal__detail__card__price{
+        width: 15%;
+    }
 }
 
-@mixin menu-detail-card {
-    &__card{
-        display: flex;
-        flex-direction: column;
-        background-color: $white1;
-        border-radius: rem(15);
-        padding: rem(10) rem(10);
-        @include menu-detail-card-name;
-        @include menu-detail-card-info;
-        position: relative;
-
-        >div{
-            
-            transition: all 500ms;
-        
-        }
-        
-              
-    }
-
-    &__card::after{
-        font-family: "Font Awesome 5 Free"; 
-        font-weight: 900;
-        content:'\f058';
-        background-color: $tertiary-light;
+@mixin card-icon {
+    &__icon{
+        border-top-right-radius: rem(15);
+        border-bottom-right-radius: rem(15);
         color: $white1;
+        background-color: $tertiary-light;
         display: flex;
         justify-content: center;
         align-items: center;
-        position: absolute;
-        top:0;
-        right: 0;
-        height: 100%;
         width: 0%;
-        opacity: 0;
-        z-index: 1;
-        transition: 500ms;
-            
-        }
-
-    
-    &__card:hover::after{
-        opacity:1;
-        width:20%;
-        border-top-right-radius: rem(15);
-        border-bottom-right-radius: rem(15);
+        transition: all 300ms ease-in-out ;
 
 
-        
-         
-        
-        
-    }
-        
+    >i{
+            opacity: 1;
+            transform: translateX(30px);
+            animation-duration: 250ms;
+            transition: all 250ms ease-in-out;
 
-    &__card:hover{
-
-        div{
-            
-            transform: translate3d(-20%, 0px, 0);
-            Color: red;
-            white-space: nowrap;
-            overflow:hidden;
-            text-overflow: ellipsis;
-
-        }
     }
 
-  
-            
-
-        
-        
-    
+    }
     
 }
+
+@mixin card-icon-afterhover {
+    .meal__detail__card__icon{
+    width: 20%;
+      
+        >i{
+        
+            opacity: 1;
+            transform: translateX(0px);
+            animation-name: rotate;
+            animation-timing-function: ease-in-out;
+
+
+        }
+    
+    }
+}
+
+
+@keyframes rotate{
+    0%{transform: rotate(0deg);}
+    
+
+    100%{transform: rotate(180deg);}
+
+}
+

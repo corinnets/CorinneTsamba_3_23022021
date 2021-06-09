@@ -22,7 +22,7 @@
         }
     }
 
-    >div{
+    &__all{
         @include tablet{
             display: flex;
             flex-wrap: wrap;
