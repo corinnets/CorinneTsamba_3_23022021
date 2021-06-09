@@ -1,5 +1,6 @@
 .btn{
-    width: 50%;
+    width: 60%;
+    max-width: 300px;
     color: $text-white;
     text-align: center;
     padding: rem(15);
@@ -12,13 +13,7 @@
     @include gradient-btn;
     @include shadow-btn($grey);
     
-    @include tablet{
-        width: 30%;
-    }
-
-    @include desktop{
-        width: 20%;
-    }
+    
     @include btn-hover;
 
 }
