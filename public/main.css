@@ -236,8 +236,8 @@ td, th {
   font-weight: 900;
   content: "";
   position: absolute;
-  top: 15%;
-  left: 42%;
+  top: 8px;
+  left: 80px;
 }
 .topbar__search > input {
   color: #545454;
