@@ -127,6 +127,7 @@ td, th {
   /* Firefox 3.5 - 3.6 */
   box-shadow: 3px 3px 3px #757575, -3px 3px 3px #757575;
   /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  transition: 100ms;
 }
 .btn:hover {
   background-color: black;
@@ -417,7 +418,6 @@ td, th {
   width: 100%;
 }
 .restau__card__info__rate > a > i:hover::after {
-  width: 110%;
   z-index: 1;
   animation-name: fill;
   animation-timing-function: ease-in-out;

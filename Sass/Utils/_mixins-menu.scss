@@ -74,7 +74,7 @@
         box-shadow: 1px 1px 10px 5px rgba(128, 128, 128, 0.178);
         justify-content: space-between;
         @include detail-card-afterhover;
-     
+        
     }
    
 }
@@ -137,12 +137,14 @@
 
 @mixin price{
     &__price{
-        width: 10%;
+        /*width: 10%;*/
         font-weight: $fw-b;
         align-self: flex-end;
         padding-bottom: rem(10);
-        padding-right: rem(20);
+        padding-right: rem(10);
         transition: all 300ms ease-in-out;
+        
+        
 
     }
 }
@@ -151,7 +153,9 @@
 @mixin price-afterhover {
     
     .meal__detail__card__price{
-        width: 15%;
+        padding-right: 0;
+        
+        
     }
 }
 

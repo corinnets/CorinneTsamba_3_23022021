@@ -134,6 +134,7 @@ td, th {
   /* Firefox 3.5 - 3.6 */
   box-shadow: 3px 3px 3px #757575, -3px 3px 3px #757575;
   /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  transition: 100ms;
 }
 .btn:hover {
   background-color: black;
@@ -264,11 +265,11 @@ td, th {
   text-overflow: ellipsis;
 }
 .meal__detail__card__price {
-  width: 10%;
+  /*width: 10%;*/
   font-weight: 700;
   align-self: flex-end;
   padding-bottom: 0.625rem;
-  padding-right: 1.25rem;
+  padding-right: 0.625rem;
   transition: all 300ms ease-in-out;
 }
 .meal__detail__card__icon {
@@ -289,7 +290,7 @@ td, th {
   transition: all 250ms ease-in-out;
 }
 .meal__detail__card:hover .meal__detail__card__price {
-  width: 15%;
+  padding-right: 0;
 }
 .meal__detail__card:hover .meal__detail__card__icon {
   width: 20%;
