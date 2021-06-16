@@ -18,8 +18,10 @@
             <img src="./assets/images/logo/ohmyfood@2x.svg" alt="logo_ohmyfood" class="logo__img">
         </div>
         <div class="topbar__search">
-            <input type="text" class="topbar_search-input" value="Paris, Belleville">
-            
+            <div class="topbar__search__box">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="text" class="topbar_search-input" value="Paris, Belleville">
+            </div>
         </div>
         <div class="topbar__detail">
             <h1 class="topbar__detail__heading">
@@ -54,27 +56,32 @@
             
             
             <div>
-                
-                <picture class="restau__card">
-                    <a href="menu-palette.html">
-                        <div class="restau__card__frame" >
-                            <span class="restau__card__frame__tag">Nouveau</span>
-                            <img class="restau__card__frame__img" src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restau la pallette du goût">
-                        </div>
+                <!--<a href="menu-palette.html"> -->
+                    <div class="restau__card">
+                        <a href="menu-palette.html">
+                            <div class="restau__card__frame" >
+                                <span class="restau__card__frame__tag">Nouveau</span>
+                                <img class="restau__card__frame__img" src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restau la pallette du goût">
+                            </div>
+                        </a>
                         <div class="restau__card__info">
-                            <div class="restau__card__info__text">
-                                <h3 class="restau__card__name">La palette du goût</h3>
-                                <p class="restau__card__info__location">Ménilmontant</p>
-                            </div>
+                            <a href="menu-palette.html">
+                                <div class="restau__card__info__text">
+                                    <h3 class="restau__card__name">La palette du goût</h3>
+                                    <p class="restau__card__info__location">Ménilmontant</p>
+                                </div>
+                            </a>
                             <div class="restau__card__info__rate">
-                                <a href=""><i data-icon=""  class="far fa-heart "></i></a>
+                                <input type="checkbox"/>
+                                <i class="far fa-heart heart"></i>
                             </div>
                         </div>
-                    </a>
-                </picture>
+                    
+                    </div>
                 
                 
-                <picture class="restau__card">
+                
+                <div class="restau__card">
                     <a href="menu-enchante.html">
                         <div class="restau__card__frame" >
                             <span class="restau__card__frame__tag">Nouveau</span>
@@ -90,9 +97,9 @@
                             </div>
                         </div>
                     </a>
-                </picture>
+                </div>
                 
-                <picture class="restau__card">
+                <div class="restau__card">
                     <a href="menu-francais.html">
                         <div class="restau__card__frame" >
                             
@@ -108,9 +115,9 @@
                             </div>
                         </div>
                     </a>
-                </picture>
+                </div>
                 
-                <picture class="restau__card">
+                <div class="restau__card">
                     <a href="menu-delice.html">
                         <div class="restau__card__frame" >
                             <img class="restau__card__frame__img" src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="restau Le délice des sens">
@@ -125,7 +132,7 @@
                             </div>
                         </div>
                     </a>
-                </picture>
+                </div>
             </diV>
         </section>
     </div>

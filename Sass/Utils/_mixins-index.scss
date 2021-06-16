@@ -1,12 +1,16 @@
 // mixin colors
 @mixin gradient-btn  {
-    background: linear-gradient($secondary-dark,$primary-dark);
+    
+    background: linear-gradient(180deg, $secondary-dark 0%, $primary-dark 100%);
+   
 }
 
+
 @mixin gradient-background {
-    background: linear-gradient($primary-dark, $secondary-dark);
-    background: -webkit-linear-gradient($primary-dark, $secondary-dark);
-    background-clip: text;
+    background: -webkit-linear-gradient(to left,  $secondary-dark 0% ,$primary-dark 100%);
+    background: -moz-linear-gradient(to left,  $secondary-dark 0% ,primary-dark 100%);
+    background: linear-gradient(to left,  $secondary-dark 0% ,$primary-dark 100%);
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -38,20 +42,17 @@
 //mixinn button
 @mixin btn-hover {
         &:hover{
-            background-color: lighten($color: #000000, $amount: 0);
-            box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-            transform: translateY(-0.25em);
+            
+            box-shadow: inset 0 0 8px 2px #f2f3f5, 0 1px 0 0 #eeeeee;
+            background: linear-gradient(180deg, rgba(179,138,228,1) 0%, rgb(240, 115, 204) 100%);
+            
+
 
         }
     
 }
 
-/*.raise:hover,
-.raise:focus {
-  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-  transform: translateY(-0.25em);*/
 
-//mixin de searchbar
 
 .icon::before {
     display: inline-block;
@@ -59,22 +60,9 @@
     font-variant: normal;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
-  }
+}
 
-  @mixin locate{
-   
-        &::before{
-            font-family: "Font Awesome 5 Free"; 
-            font-weight: 900;
-            content:'\f3c5';
-            position: absolute;
-            top: 8px;
-            left:80px;
-            
-            
-        }
-            
-  }
+  
 //mixin of nav_list_item
 @mixin item {
     @include numb;
@@ -166,56 +154,8 @@
     }
 }
 
-
-
-@mixin rate {
-    font-size: 1.5rem;
-     
-    >a >i{
-        color: $grey-super-dark;
-        position: relative;
-        display: inline-block;
-        width: 100%;
-        text-align: center;
-               
-   }
-    >a >i:hover{
-        
-        @include gradient-heart;
-        transition: all 1s ease-in-out;
-        
-    }
-    >a >i::after{
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        content:'\f004';
-        position: absolute;
-        top: 0%;
-        left: 0.5px;;
-        @include gradient-heart;
-        z-index: -1;
-        animation-duration: 1.5s;
-        transition: all 1.5s ease;
-        width: 100%;
-
-    }
-
-    >a>i:hover::after{
-        
-        z-index: 1;
-        animation-name: fill;
-        animation-timing-function: ease-in-out;
-      
-    }
+   
  
-}
-
-@keyframes fill{
-    0%{height: 0%;transform: scale(1);}
-   100%{height: 100%;transform: scale(1.1)}
-}
-
-
 @mixin info {
     @include background($white1);
     height: 100%;
@@ -228,14 +168,85 @@
     
     
     &__rate{
-        @include rate;
+        position: relative;
+      
+        input[type='checkbox']{
+            width: 25px;
+            height: 30px;
+            position: absolute;
+            top:0;
+            opacity: 0;
+            z-index: 2;
+            cursor: pointer;
+          
+            &:checked ~ .heart{
+                &::after {
+                    animation-name: fill;
+                    animation-timing-function: ease-in-out;
+                    animation-fill-mode: forwards;
+    
+                }
+
+                &{
         
-    }
-         
+                    @include gradient-heart;
+                    transition: all 200ms ease-in-out;
+                }
+
+            }
+        }
+        
+        .heart{
+            font-size: 1.5rem;
+            color: $grey-super-dark;
+            position: relative;
+            display: inline-block;
+            
+            text-align: center;
+            
+        }
 
         
+
+        .heart::after{
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content:'\f004';
+            position: absolute;
+            top: 0%;
+            left: 0.5px;
+            @include gradient-heart;
+            z-index: 1;
+            animation-duration: 300ms;
+            
+            height: 0%;
+            
+            
+
+        }
+        
+                    
+        
+        
+        
+        
+        
+        
+    }
+ 
     
 }
+
+@keyframes fill {
+    0% {
+      height: 0%;
+      
+    }
+    100% {
+      height: 100%;
+      
+    }
+  }
 
 
 //mixin footer_logo

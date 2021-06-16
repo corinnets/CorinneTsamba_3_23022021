@@ -1,23 +1,38 @@
 
 
 .topbar__search{
-    position: relative;
-
-    @include locate;
-    > input{
-        color: $grey-dark;
-        font-weight: $fw-b;
-        display: block;
-        border-right-style: hidden;
-        border-left-style: hidden;
-
-        width: 375px;
-        text-align: center;
-        padding-top: rem(10);
-        padding-bottom: rem(10);
-        background-color: $grey-light ;
-        margin: auto;
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 0px 7px 13px -10px rgb(185, 183, 183); 
+    background-color: $grey-light ;
+    padding: rem(5);
         
+   
+    .topbar__search__box{
+        width: 375px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: $grey-light ;
+        
+        
+        input{
+            color: $grey-dark;
+            font-weight: $fw-b;
+            border: hidden;
+            width: 40%;
+            padding-top: rem(10);
+            padding-bottom: rem(10);
+            background-color: $grey-light ;
+         
+        }
+
+        i{
+           margin-top: rem(10);
+           margin-right: rem(15);
+          
+         
+        }
 
     }
     
