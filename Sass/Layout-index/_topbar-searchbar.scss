@@ -6,7 +6,19 @@
     box-shadow: inset 0px 7px 13px -10px rgb(185, 183, 183); 
     background-color: $grey-light ;
     padding: rem(5);
-        
+
+    @include tablet{
+        width: 375px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: rem(20);
+        box-shadow: none; 
+        border-radius: 30px;
+        background-color: $grey-light ;
+
+    }
+
+    
    
     .topbar__search__box{
         width: 375px;
@@ -14,6 +26,11 @@
         flex-direction: row;
         justify-content: center;
         background-color: $grey-light ;
+        
+        @include tablet{
+            border-radius: 30px;
+
+        }
         
         
         input{

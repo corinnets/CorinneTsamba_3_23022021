@@ -149,8 +149,8 @@
         padding: rem(5) rem(15);
         border-radius: rem(2);
         position: absolute;
-        right: 0;
-        margin-top: rem(10);
+        right: 15px;
+        margin-top: rem(15);
     }
 }
 
@@ -264,6 +264,15 @@
     }
     
 }
+
+@mixin laptop {
+    @media screen and (min-width:map-get($breakpoints, laptop)) {
+        @content;
+    }
+    
+}
+
+
 
 @mixin desktop{
     @media screen and (min-width:map-get($breakpoints, desktop)){

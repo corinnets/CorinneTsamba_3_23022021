@@ -137,7 +137,7 @@
 
 @mixin price{
     &__price{
-        /*width: 10%;*/
+        
         font-weight: $fw-b;
         align-self: flex-end;
         padding-bottom: rem(10);
