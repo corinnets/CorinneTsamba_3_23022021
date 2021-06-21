@@ -6,39 +6,125 @@
         padding-bottom: rem(10);
         display: flex;
         align-items: center;
-        @include tablet{
-            position: relative;
-        }
+        justify-content: space-evenly;
+        
     
 
 
-        &__icon-return{
+        a{
             
             padding-left: rem(20);
             padding-right: rem(60);
+            
+
+            color: black;
+            position: absolute;
+            left: 0;
+            
+            
+            
         }
             
-        &__logo{
-            @include tablet{
-                position: absolute;
-                right: 40%;
-            }
+        
+           
             
                 
 
             
-        }
+        
 
     }
 
 }
 
 //mixin menu__heading
+.icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
 
-@mixin icon-heart {
-    &__icon{
-        font-size: 1.5rem;
-       
+@mixin heading-title{
+    h1{
+        
+        margin: 0;
+      
+    }
+}
+
+@mixin heading-rate {
+    
+
+    &__rate{
+        position: relative;
+
+        
+
+      
+        input[type='checkbox']{
+            width: 25px;
+            height: 30px;
+            position: absolute;
+            top:0;
+            opacity: 0;
+            z-index: 2;
+            cursor: pointer;
+          
+            &:checked ~ .heart{
+                &::after {
+                    animation-name: fill;
+                    animation-timing-function: ease-in-out;
+                    animation-fill-mode: forwards;
+    
+                }
+
+                &{
+        
+                    @include gradient-heart;
+                    transition: all 200ms ease-in-out;
+                }
+
+            }
+        }
+        
+        .heart{
+            font-size: 1.5rem;
+            color: $grey-super-dark;
+            position: relative;
+            display: inline-block;
+            
+            text-align: center;
+            
+        }
+
+        
+
+        .heart::after{
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content:'\f004';
+            position: absolute;
+            top: 0%;
+            left: 0.5px;
+            @include gradient-heart;
+            z-index: 1;
+            animation-duration: 300ms;
+            
+            height: 0%;
+            
+            
+
+        }
+        
+                    
+        
+        
+        
+        
+        
+        
     }
     
 }
@@ -169,14 +255,15 @@
         justify-content: center;
         align-items: center;
         width: 0%;
-        transition: all 300ms ease-in-out ;
+        transition: all 400ms ease-in-out ;
 
 
     >i{
             opacity: 0;
             transform: translateX(30px);
-            animation-duration: 250ms;
-            transition: all 250ms ease-in-out;
+            animation-duration: 350ms;
+            transition: all 400ms ease-in-out ;
+            
 
     }
 
@@ -193,7 +280,7 @@
             opacity: 1;
             transform: translateX(0px);
             animation-name: rotate;
-            animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in;
 
 
         }

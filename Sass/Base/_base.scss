@@ -17,6 +17,12 @@ body{
     color: $text-main;
     font-size: 1rem;
     position: relative;
+    max-width: 1340px;
+    
+
+    
+   
+
        
     
 }
@@ -39,7 +45,11 @@ body h2{
 body h3{
     font-weight: $fw-b;
     font-size: 1rem;
+    margin: 0;
 
+}
+body p{
+    margin:0;
 }
 
 .container a{

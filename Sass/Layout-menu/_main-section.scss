@@ -5,6 +5,7 @@
     padding-left: rem(20);
     padding-right: rem(20);
     padding-bottom: rem(40);
+    overflow: hidden;
          
     
     &__heading{
@@ -13,7 +14,10 @@
         justify-content: space-between;
         align-items: center;
         padding: rem(30) rem(10) 0;
-        @include icon-heart;
+
+        @include heading-title;        
+        @include heading-rate;
+
         @include tablet{
             width: 40%;
             margin-left: auto;
@@ -21,6 +25,8 @@
             padding-bottom: rem(30);
         }
     }
+
+   
 
     &__all{
         @include tablet{
